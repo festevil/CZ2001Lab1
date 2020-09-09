@@ -9,6 +9,7 @@ public class BruteForce{
 			for (int k = 0; k < inputlength; k++) {
 				if (inputstring.charAt(k) != datastring.charAt(i + k)) {
 					a = false;
+					break;
 				}
 			}
 			if (a == true) {
