@@ -44,7 +44,7 @@ public class KMP {
 				{
 					exist = true;
 					System.out.print(" " + (i + 2 - j) + " ");
-					j = 0;
+					j = lsp[j-1];//Not to 0. Otherwise backtrack occurs, and worst case becomes O(inputlen*datalen).
 				}
 			}
 		}
